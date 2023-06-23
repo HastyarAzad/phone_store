@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.phone_store">
+    package="com.phoneStore.phone_store">
    <application
         android:label="phone_store"
         android:name="${applicationName}"
