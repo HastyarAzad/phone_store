@@ -413,19 +413,24 @@ class ItemDetailsView extends GetView<ItemDetailsController> {
                             height: Get.height * 0.02,
                           ),
                           // add a button saying Add To Cart
-                          Container(
-                            height: 50,
-                            width: Get.width,
-                            decoration: BoxDecoration(
-                              color: Color(0xffe56a36),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'Add To Cart',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white,
+                          InkWell(
+                            onTap: () {
+                              controller.goToCart();
+                            },
+                            child: Container(
+                              height: 50,
+                              width: Get.width,
+                              decoration: BoxDecoration(
+                                color: Color(0xffe56a36),
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Add To Cart',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),

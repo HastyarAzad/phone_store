@@ -74,6 +74,7 @@ class LoginView extends GetView<LoginController> {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: TextField(
+                              controller: controller.phoneController,
                               cursorColor: Color(0xffE56A36),
                               keyboardType: TextInputType.phone,
                               decoration: InputDecoration(

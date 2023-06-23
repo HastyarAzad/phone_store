@@ -2,6 +2,10 @@ import 'package:get/get.dart';
 
 import '../modules/account/bindings/account_binding.dart';
 import '../modules/account/views/account_view.dart';
+import '../modules/cart/bindings/cart_binding.dart';
+import '../modules/cart/views/cart_view.dart';
+import '../modules/checkout/bindings/checkout_binding.dart';
+import '../modules/checkout/views/checkout_view.dart';
 import '../modules/favorate/bindings/favorate_binding.dart';
 import '../modules/favorate/views/favorate_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -78,6 +82,16 @@ class AppPages {
       name: _Paths.ITEM_DETAILS,
       page: () => const ItemDetailsView(),
       binding: ItemDetailsBinding(),
+    ),
+    GetPage(
+      name: _Paths.CART,
+      page: () => const CartView(),
+      binding: CartBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHECKOUT,
+      page: () => const CheckoutView(),
+      binding: CheckoutBinding(),
     ),
   ];
 }
