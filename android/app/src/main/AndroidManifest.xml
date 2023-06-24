@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.phoneStore.phone_store">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="phone_store"
         android:name="${applicationName}"

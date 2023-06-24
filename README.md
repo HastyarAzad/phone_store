@@ -59,5 +59,5 @@ Contributions are always welcome!
 
 ## Contact
 
-- [Hastyar Azad](
+- Hastyar Azad
 - [LinkedIn](https://www.linkedin.com/in/hastyar-azad-4857a522a/)
