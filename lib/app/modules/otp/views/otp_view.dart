@@ -75,7 +75,9 @@ class OtpView extends GetView<OtpController> {
                             ),
                             child: Pinput(
                               length: 6,
-                              onChanged: (value) {},
+                              onChanged: (value) {
+                                controller.otp.value = value;
+                              },
                               closeKeyboardWhenCompleted: true,
                               keyboardType: TextInputType.number,
                               showCursor: true,

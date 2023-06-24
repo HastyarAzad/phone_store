@@ -32,12 +32,10 @@ class LoginController extends GetxController {
       codeSent: (String verificationId, int? resendToken) {
         Get.toNamed(Routes.OTP, arguments: {
           "verificationId": verificationId,
-          "phone": phoneController.text,
-          "fromPage": "phoneAuth",
         });
       },
       codeAutoRetrievalTimeout: (String verificationId) {
-        Get.snackbar('error', 'codeAutoRetrievalTimeout');
+        Get.snackbar('error', 'timed out, please check your connection');
       },
     );
   }

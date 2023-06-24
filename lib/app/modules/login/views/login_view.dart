@@ -78,7 +78,7 @@ class LoginView extends GetView<LoginController> {
                               cursorColor: Color(0xffE56A36),
                               keyboardType: TextInputType.phone,
                               decoration: InputDecoration(
-                                hintText: '(750) 865 95 85',
+                                hintText: '(0750) 865 95 85',
                                 hintStyle: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.normal,

@@ -13,7 +13,41 @@ class AccountView extends GetView<AccountController> {
         init: AccountController(),
         builder: (controller) {
           return SafeArea(
-            child: Scaffold(
+            child: !controller.loggedIn.value
+                ? Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'You are not logged in',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          width: 200,
+                          height: 50,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xffE56A36),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
+                            onPressed: () {
+                              controller.goToLogin();
+                            },
+                            child: Text('login'),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+            : Scaffold(
               appBar: AppBar(
                 title: Text(
                   controller.title.value,
